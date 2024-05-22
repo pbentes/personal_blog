@@ -1,0 +1,14 @@
+# GoWebAppTemplate
+
+The goal of this project is to create a template project that showcases the best practices when creating rich web applications using Go.
+
+On the frontend we are using:
+
+- [HTMX](https://htmx.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Templ](https://templ.guide/)
+
+On the backend we use:
+
+- [Turso](https://turso.tech/) (With [SQLx](https://jmoiron.github.io/sqlx/))
+- Go's net/http package
