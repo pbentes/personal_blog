@@ -4,7 +4,7 @@
 	<title>{{ if not .IsHome }}{{ .Title | title }} | {{ end }}{{ .Site.Title }}</title>
 	<link rel="canonical" href="{{ .Site.BaseURL }}">
 	<link rel='alternate' type='application/rss+xml' title="{{ .Site.Title }} RSS" href='/index.xml'>
-	<link rel='stylesheet' type='text/css' href='/style.css'>
+	<link rel='stylesheet' type='text/css' href='/tailwind.css'>
 	{{ with .Site.Params.favicon }}<link rel="icon" href="{{ . }}">
 	{{ end -}}
 	<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
@@ -14,9 +14,9 @@
 	<meta name="robots" content="index, follow">
 	<meta charset="utf-8">
 </head>
-<body>
+<body class="bg-slate-800 text-white flex flex-col gap-0 min-h-[100vh]">
 {{ if .Site.Menus.main }}{{ partial "nav.html" . }}{{ end -}}
-<main>
+<main class="container max-w-[120ch] w-[90vw] mx-auto">
 {{ block "main" . }}
 {{ .Content }}
 {{ end }}

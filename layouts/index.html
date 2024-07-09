@@ -1,3 +1,17 @@
 {{ define "main" }}
     <h1>Test</h1>
+    <ul>
+    {{- range.Pages.ByDate.Limit 9 }}
+    <li>
+        {{- if .Param "datesinlist" }}<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006 Jan 02" }}</time> &ndash; {{ end -}}
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{- if .Param "authorsinlist" }}
+        {{ with .Params.authors }}
+            by 
+            {{ delimit . ", " " and " }}
+        {{end}}
+        {{ end -}}
+    </li>
+    {{- end }}
+    </ul>
 {{ end }}
