@@ -1,0 +1,8 @@
+<article>
+{{ define "title" -}}
+{{ if .Param "taglist" }}{{ partial "taglist.html" . }}{{ end -}}
+{{ .Title }}
+{{- end }}
+</article>
+
+{{ if .Param "nextprev" }}{{ partial "nextprev.html" . -}}{{ end -}}
