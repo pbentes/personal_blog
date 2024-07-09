@@ -1,10 +1,34 @@
 baseURL = 'https://example.org/'
+enableRobotsTXT = true
 languageCode = 'en-us'
 title = 'Pedro Bentes'
 favicon = 'favicon.ico'
 
 [menus]
+  # Main menu
   [[menus.main]]
-    name = 'Home'
-    pageRef = '/'
+    name = 'Blog'
+    url = '/'
     weight = 10
+  [[menus.main]]
+    name = 'Resume'
+    url = '/'
+    weight = 11
+  [[menus.main]]
+    name = 'About'
+    url = 'index.html'
+    weight = 12
+
+  # Footer menu
+  [[menus.footer]]
+    name = 'Github'
+    url = '/'
+    weight = 10
+  [[menus.footer]]
+    name = 'Twitter'
+    url = 'https://www.x.com/pbentesio'
+    weight = 11
+  [[menus.footer]]
+    name = 'RSS'
+    url = 'index.xml'
+    weight = 12
