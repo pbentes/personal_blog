@@ -1,8 +1,14 @@
-<article>
-{{ define "title" -}}
-{{ if .Param "taglist" }}{{ partial "taglist.html" . }}{{ end -}}
-{{ .Title }}
-{{- end }}
-</article>
+{{ define "main" }}
+    <article>
+    {{ if .Param "taglist" }}{{ partial "taglist.html" . }}{{ end -}}
+    {{ .Title }}
 
-{{ if .Param "nextprev" }}{{ partial "nextprev.html" . -}}{{ end -}}
+    {{.Content}}
+    </article>
+
+    {{ if .Param "nextprev" }}
+        {{ partial "nextprev.html" . -}}
+    {{ else }}
+        {{ partial "nextprev.html" . -}} 
+    {{ end -}}
+{{ end }}

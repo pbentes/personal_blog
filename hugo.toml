@@ -11,13 +11,9 @@ favicon = 'favicon.ico'
     url = '/'
     weight = 10
   [[menus.main]]
-    name = 'Resume'
+    name = 'About'
     url = '/'
     weight = 11
-  [[menus.main]]
-    name = 'About'
-    url = 'index.html'
-    weight = 12
 
   # Footer menu
   [[menus.footer]]
@@ -29,6 +25,10 @@ favicon = 'favicon.ico'
     url = 'https://www.x.com/pbentesio'
     weight = 11
   [[menus.footer]]
+    name = 'LinkedIn'
+    url = 'https://www.linkedin.com/in/pgbentes/'
+    weight = 12
+  [[menus.footer]]
     name = 'RSS'
     url = 'index.xml'
-    weight = 12
+    weight = 13
