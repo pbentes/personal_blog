@@ -81,7 +81,7 @@ Ever since then, no matter where my professional life as a software developer to
     </div>
     <div style="display: flex; flex-direction: column; width: 50%; padding: 1rem; gap: 2rem;">
         <div style="width: 100%;">
-            <img style="border-radius: 10px; width: 100%;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F459225%2Fpexels-photo-459225.jpeg%3Fcs%3Dsrgb%26dl%3Ddaylight-environment-forest-459225.jpg%26fm%3Djpg&f=1&nofb=1&ipt=4bed9216ce9b1b0e2f3db13a0d7526e97f47e3bea012bda5ab0c1628476bceaf&ipo=images"/>
+            <img style="border-radius: 10px; width: 100%;" src="/assets/se_movement.png"/>
             <div style="display: flex; gap: 0.5rem;">
                 <span style="background-color: #4ade80; border-radius: 5px; padding: 0.5rem; font-size: 11px; color: #0c0a09;">Godot</span>
                 <span style="background-color: #4ade80; border-radius: 5px; padding: 0.5rem; font-size: 11px; color: #0c0a09;">GDScript</span>
