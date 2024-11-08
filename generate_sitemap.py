@@ -2,7 +2,7 @@ import os
 from urllib.parse import urljoin
 
 base_url = "http://localhost:3000"  # Change to your site's base URL
-output_dir = "public"          # Change to your mdBook build directory
+output_dir = "docs"          # Change to your mdBook build directory
 
 def generate_sitemap(output_dir, base_url):
     sitemap_entries = []
