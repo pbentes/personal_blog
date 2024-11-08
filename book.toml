@@ -1,0 +1,13 @@
+[book]
+authors = ["pbentes"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Pedro Bentes"
+build-unsafe = true
+create-missing = true
+
+[output.html]
+additional-css = ["./theme/catppuccin.css", "./theme/catppuccin-admonish.css"]
+default-theme = "frappe"
+preferred-dark-theme = "frappe"
