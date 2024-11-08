@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /login/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /user-settings/
+
+Disallow: /tags/
+Disallow: /comments/
+Disallow: /search/
+
+Disallow: /*?*
+
+User-agent: Googlebot
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.svg$
+Allow: /*.gif$
+
+Sitemap: https://pbentes.eckle.io/sitemap.xml

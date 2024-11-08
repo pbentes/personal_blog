@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html lang="en" class="frappe" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Pedro Bentes</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <script src="https://kit.fontawesome.com/29df60189c.js" crossorigin="anonymous"></script>
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="./theme/catppuccin.css">
+        <link rel="stylesheet" href="./theme/catppuccin-admonish.css">
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "frappe" : "frappe";
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('frappe')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <div id="page-wrapper" class="page-wrapper" style="max-width: 80ch; width: 90%; margin: 0 auto;">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <nav id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <style>
+                            .menu-title {
+                                display: flex;
+                                flex-direction: row;
+                            }
+                            .menu-title ol {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 2rem;
+                                margin: 0;
+                            }
+
+                            .menu-title ol li.chapter-item {
+                                margin: 0;
+                                a {
+                                    font-weight: 700;
+                                    font-size: 1.8rem;
+                                    line-height: var(--menu-bar-height);
+                                    text-align: center;
+                                    white-space: nowrap;
+                                }
+                            }
+                        </style>
+                        <div class="menu-title">
+                            <a href="/" style="display: flex; flex-direction: row; gap: 1rem; text-decoration: none; margin: auto 0; padding-right: 2rem;">
+                                <img src="favicon.svg" alt="logo" style="height: 4rem; width: fit-content;">
+                            </a>
+                            <ol class="chapter">
+                                <li class="chapter-item expanded affix "><a href="/">Homepage</a></li>
+                                <li class="chapter-item expanded affix "><a href="/blog.html">Blog</a></li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <button id="search-toggle" style="padding: 0;" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+
+                        <a href="https://www.linkedin.com/in/pgbentes/" target="_blank">
+                            <i id="print-button" class="fa fa-linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/pbentes" target="_blank">
+                            <i id="print-button" class="fa fa-github"></i>
+                        </a>
+
+                        <a href="https://www.x.com/pbentesio" target="_blank">
+                            <i id="print-button" class="fa fa-twitter"></i>
+                        </a>
+
+                        <a href="https://bsky.app/profile/pbentes.eckle.io" target="_blank">
+                            <i id="print-button" class="fa fa-bluesky"></i>
+                        </a>
+                    </div>
+                </nav>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="hello-im-pedro"><a class="header" href="#hello-im-pedro">Hello, I'm Pedro</a></h1>
+<p>At 11 years old, my interest in video games led me to wonder about how they were built. One YouTube search and a couple downloads later, my road into developing games had started.</p>
+<p>Ever since then, no matter where my professional life as a software developer took me, I have kept making games as a way to learn new skills, even taking steps into tool development since mid-2023, in the hopes that an opportunity in the industry presents itself.</p>
+<style>
+    ul {
+        li {
+            padding-left: 0.5rem;
+        }
+        li::marker {
+            content: "\f00c";
+            font-family: FontAwesome;
+        }
+    }
+</style>
+<h1 id="my-projects"><a class="header" href="#my-projects">My Projects</a></h1>
+<div style="display: flex; flex-direction: row; width: 100%;">
+    <div style="display: flex; flex-direction: column; width: 50%; padding: 1rem; gap: 2rem;">
+        <!--
+        <div style="width: 100%;">
+            <img style="border-radius: 10px; width: 100%;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F459225%2Fpexels-photo-459225.jpeg%3Fcs%3Dsrgb%26dl%3Ddaylight-environment-forest-459225.jpg%26fm%3Djpg&f=1&nofb=1&ipt=4bed9216ce9b1b0e2f3db13a0d7526e97f47e3bea012bda5ab0c1628476bceaf&ipo=images"/>
+            <div style="display: flex; gap: 0.5rem;">
+                <span style="background-color: #4ade80; border-radius: 5px; padding: 0.5rem; font-size: 11px; color: #0c0a09;">C++</span>
+                <span style="background-color: #4ade80; border-radius: 5px; padding: 0.5rem; font-size: 11px; color: #0c0a09;">Game Design</span>
+            </div>
+            <div style="display: flex;">
+                <h2 style="margin: 0;">Card Title</h2>
+                <a href="/" target="_blank" style="align-self: center; margin-left: 1rem;">
+                    <i id="print-button" class="fa fa-link"></i>
+                </a>
+            </div>
+            <ul style="margin: 0; ">
+                <li>Item</li>
+            </ul>
+        </div>
+        -->
+        <div style="width: 100%;">
+            <img style="border-radius: 10px; width: 100%;" src="https://images.pexels.com/photos/7586662/pexels-photo-7586662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+            <div style="display: flex; gap: 0.5rem;">
+                <span style="background-color: #4ade80; border-radius: 5px; padding: 0.5rem; font-size: 11px; color: #0c0a09;">Godot</span>
+                <span style="background-color: #4ade80; border-radius: 5px; padding: 0.5rem; font-size: 11px; color: #0c0a09;">GDScript</span>
+                <span style="background-color: #4ade80; border-radius: 5px; padding: 0.5rem; font-size: 11px; color: #0c0a09;">Networking</span>
+                <span style="background-color: #4ade80; border-radius: 5px; padding: 0.5rem; font-size: 11px; color: #0c0a09;">Audio</span>
+            </div>
+            <div style="display: flex;">
+                <h2 style="margin: 0;">Godot VoIP</h2>
+                <a href="https://github.com/pbentes/GodotVoIP" target="_blank" style="align-self: center; margin-left: 1rem;">
+                    <i id="print-button" class="fa fa-link"></i>
+                </a>
+            </div>
+            <ul style="margin: 0; ">
+                <li>Capture microphone input</li>
+                <li>Compress an audio stream</li>
+                <li>Pier to Pier networking</li>
+                <li>Playback an audio stream</li>
+            </ul>
+        </div>
+        <div style="width: 100%;">
+            <img style="border-radius: 10px; width: 100%;" src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+            <div style="display: flex; gap: 0.5rem;">
+                <span style="background-color: #4ade80; border-radius: 5px; padding: 0.5rem; font-size: 11px; color: #0c0a09;">C++</span>
+                <span style="background-color: #4ade80; border-radius: 5px; padding: 0.5rem; font-size: 11px; color: #0c0a09;">CMake</span>
+                <span style="background-color: #4ade80; border-radius: 5px; padding: 0.5rem; font-size: 11px; color: #0c0a09;">Github CI</span>
+            </div>
+            <div style="display: flex;">
+                <h2 style="margin: 0;">CMake Project Template</h2>
+                <a href="https://github.com/pbentes/ProjectTemplate" target="_blank" style="align-self: center; margin-left: 1rem;">
+                    <i id="print-button" class="fa fa-link"></i>
+                </a>
+            </div>
+            <ul style="margin: 0; ">
+                <li>Core/Application Project</li>
+                <li>Use CMake to fetch dependencies</li>
+                <li>Github Actions to check for build status and run the tests</li>
+            </ul>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: column; width: 50%; padding: 1rem; gap: 2rem;">
+        <div style="width: 100%;">
+            <img style="border-radius: 10px; width: 100%;" src="/assets/se_movement.png"/>
+            <div style="display: flex; gap: 0.5rem;">
+                <span style="background-color: #4ade80; border-radius: 5px; padding: 0.5rem; font-size: 11px; color: #0c0a09;">Godot</span>
+                <span style="background-color: #4ade80; border-radius: 5px; padding: 0.5rem; font-size: 11px; color: #0c0a09;">GDScript</span>
+            </div>
+            <div style="display: flex;">
+                <h2 style="margin: 0;">FPS Controller</h2>
+                <a href="https://github.com/pbentes/Source-Engine-Movement" target="_blank" style="align-self: center; margin-left: 1rem;">
+                    <i id="print-button" class="fa fa-link"></i>
+                </a>
+            </div>
+            <ul style="margin: 0; ">
+                <li>Quake/Source movement</li>
+                <li>State Machine based movement system</li>
+                <li>Reusable locomotion system for both player and enemy AI</li>
+            </ul>
+        </div>
+    </div>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="recent-posts"><a class="header" href="#recent-posts">Recent Posts</a></h1>
+<hr />
+<p>Oct 14th 2024</p>
+<p><a href="./blog/modern_web.html">The state of the modern web</a></p>
+<hr />
+
+                    </main>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>
